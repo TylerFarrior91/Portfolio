@@ -1,0 +1,49 @@
+body, html, * {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 20px;
+    background: rgb(101, 146, 101);
+    color: white;
+}
+
+header nav {
+    display: flex;
+    margin-top: 8px;
+}
+
+li {
+    list-style-type: none;
+}
+
+nav li a {
+    margin-left: 12px;
+    color: white;
+    text-decoration: none;
+}
+
+.me {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 40px auto;
+}
+
+.me img {
+    border-radius: 50%;
+    width: 30%;
+    border: 2px solid rgb(101, 146, 101);
+}
+
+section {
+    margin: 25px 100px;
+}
+
+section h1 {
+    text-align: center;
+}
+

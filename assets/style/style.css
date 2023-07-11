@@ -1,6 +1,12 @@
-body, html, * {
+body,
+html,
+* {
     margin: 0;
     padding: 0;
+}
+
+body {
+    background: rgb(131, 105, 74);
 }
 
 header {
@@ -41,9 +47,90 @@ nav li a {
 
 section {
     margin: 25px 100px;
+    color: white;
 }
 
 section h1 {
     text-align: center;
+    margin-bottom: 15px;
+    color: white;
 }
+
+.contact ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contact ul li a {
+    text-decoration: none;
+    color: rgb(155, 212, 167);
+}
+
+
+.lgImg img {
+    width: 607px;
+}
+
+.lgImg  {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.smImg {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+
+.lgImg p {
+    position: absolute;
+    bottom: 0;
+    left: 50;
+    background: rgba(128, 128, 128, 0.61);
+    padding: 10px 20px;
+    border-radius: 4px 4px 0 0 ;
+}
+
+.smImg p {
+    position: absolute;
+    padding: 10px 20px;
+    bottom: 0;
+    left: 50;
+    background: rgba(128, 128, 128, 0.61);
+    border-radius: 4px 4px 0 0;
+}
+
+
+.myWork {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 8px;
+    justify-content: center;
+    margin: 8px auto;
+    width: 100%;
+}
+
+@media screen and (max-width: 810px) {
+    .myWork {
+        grid-template-columns: auto;
+    }
+    .work img {
+        width: 500px !important;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .myWork {
+        grid-template-columns: auto;
+    }
+    .work img {
+        width: 350px !important;
+    }
+}
+
+
 
